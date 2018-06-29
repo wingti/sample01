@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.sample01.mapper.LoginMapper">
+
+    <select id="getUserData" parameterType="map" resultType="com.example.sample01.service.LoginVO">
+
+        SELECT
+            userid
+            ,username
+            ,realname
+        FROM
+          kms_cnf_user_tb
+        <where>
+          username = #{username}
+          and password = #{password}
+        </where>
+
+    </select>
+
+</mapper>
