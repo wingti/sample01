@@ -35,7 +35,7 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter-web')
 	compile('org.apache.tomcat.embed:tomcat-embed-jasper')
 	compile('javax.servlet:jstl:1.2')
-
+	compile("org.springframework.security:spring-security-taglibs")
 
 
 	//db
@@ -45,4 +45,8 @@ dependencies {
 	//java
 	compileOnly('org.projectlombok:lombok')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
+
+	//webjars
+	compile('org.webjars:vue:2.5.16')
+	compile('org.webjars.npm:axios:0.18.0')
 }
